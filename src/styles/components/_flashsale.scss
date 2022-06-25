@@ -1,0 +1,68 @@
+.flash-sale {
+  h2 {
+    margin: 2rem 100px;
+    font-size: 26px;
+  }
+
+  &__wrapper {
+    margin: 1rem 100px;
+    display: flex;
+    overflow-x: auto;
+    
+
+    &__card {
+      position: relative;
+      margin-right: 2rem;
+      width: fit-content;
+      border-radius: 1rem;
+      border: 1px solid $grey;
+      box-shadow: 2px 4px 4px $grey;
+      z-index: 1;
+
+      &__badge {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        right: 0;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 1rem 1rem 5px 5px;
+        background-color: $red;
+        color: $white;
+        font-size: 26px;
+        z-index: 2;
+      }
+
+      &__badge::before,
+      &__badge:after {
+        position: relative;
+        content: "";
+        width: 20px;
+        position: absolute;
+        border-bottom: 70px solid $red;
+        border-left: 40px solid transparent;
+        border-right: 39px solid transparent;
+        top: 50px;
+        left: -24px;
+        transform: rotate(-150deg);
+        z-index: -1;
+      }
+
+      &__badge::after {
+        left: auto;
+        right: -24px;
+        transform: rotate(150deg);
+      }
+
+      &__label {
+        padding: 2rem 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+@import "./consts/color";
+
+@import "./components/alerts/alert";
+@import "./components/header";
+@import "./components/category/category";
+@import "./components/flashsale";
+@import "./components/allproduct";
+@import "./components/detail";
+@import "./components/card";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}

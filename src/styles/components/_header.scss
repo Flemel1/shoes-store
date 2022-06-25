@@ -1,0 +1,41 @@
+.header {
+    width: 100%;
+    background-color: $secondaryColor;
+    
+    &__wrapper {
+        width: inherit;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+
+        &__brand {
+            color: $white;
+            font-size: 30px;
+        }
+
+        &__search {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            background-color: $white;
+            border-radius: 1rem;
+
+            &__icon {
+                margin: 0 1rem;
+                background-color: $white;
+            }
+
+            &__input {
+                height: 50px;
+                width: 100%;
+                border-radius: 1rem;
+                border: none;
+            }
+
+            &__input:focus {
+                outline: none;
+            }
+        }
+    }
+}
